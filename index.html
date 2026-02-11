@@ -1,14 +1,24 @@
-<!doctype html>
-<html lang="th" class="h-full">
- <head>
+<!DOCTYPE html>
+<html>
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ระบบลากลับบ้าน</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="/_sdk/element_sdk.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <style>
-    body {
+  <title>SW Website</title>
+</head>
+<body>
+
+  <h1>Firebase Test</h1>
+
+  <button onclick="writeData()">Write Data</button>
+  <button onclick="readData()">Read Data</button>
+  <button onclick="addItem('Somchai')">Add User</button>
+
+  <script type="module">
+    import { writeData, readData, addItem } from "./firebase.js";
+    window.writeData = writeData;
+    window.readData = readData;
+    window.addItem = addItem;
+  
+   </script
       box-sizing: border-box;
       font-family: 'Prompt', sans-serif;
     }
